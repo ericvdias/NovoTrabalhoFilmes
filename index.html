@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="estilo.css" rel="stylesheet">
+
+
+
+	<title>Testes - Filmes da Semana</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand" href="#">Filmes da Semana</div>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#" onclick="paginaInicial()"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="#" title="Minha Lista" onclick="minhaLista()"><span class="glyphicon glyphicon-film"></span></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> ericvdias</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<form class="form-inline">
+			<div class="nav navbar-nav" > 
+				<input type="text" id="filmeBusca" placeholder="Buscar" class="form-control form-control-lg" style="border: 1px solid black">
+				<button type="button" id="buscaFilmes" class="btn btn-light" onclick="buscaFilme()"> Pesquisar</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="container" >
+		<div class="col-md-6" id="posicao1"></div>
+
+		<div class="col-md-6" id="posicao2"></div>
+	</div>
+	
+	<script src="mainExemploTeste.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/*=================layout========================*/
+
+/******* Body *******/
+
+html, body, .capa{
+	height: 100%;
+}
+
+body{
+	background: url('imagens/fundo2.png'),
+	url('imagens/ruido.png'),
+	linear-gradient(50deg,white,white);
+
+	background-attachment: fixed;	
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;	/*remove barra de rolagem*/		
+}
+
+/******* Barra de Navegação *******/
+
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+	border: none;
+}
+
+	.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav >li>a, footer .nav a{
+	color: white;
+}
+.navbar-inverse .navbar-nav >li>a:hover, footer .nav a:hover{
+	color: #9bf0e1;
+	
+}
+
+
+h3{	
+	color: #D3D3D3;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+p {
+	color: #808080;
+
+}
+
+.row{
+	
+	padding: 20px 0px 20px 0px;	
+	box-shadow: 5px 5px 10px #000000;
+}
+
+#filme{
+	
+	transition: background 0.4s, color 0.4s;
+}
+
+
+div.show-image:hover img{
+	opacity:0.7;
+	-webkit-transition-duration: 0.3s;
+	border: 10px solid;
+}
+
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 146px; 
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+/* ----------------- */
+
